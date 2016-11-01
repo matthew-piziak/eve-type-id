@@ -22382,6 +22382,6 @@ pub fn to_string(type_id: u64) -> &'static str {
         368618 => "State Sentinel C-I",
         368619 => "State Sentinel C/1-Series",
         368620 => "State Sentinel ck.0",
-        _ => panic!("Unknown type ID"),
+        other => panic!("Unknown type ID {}", other),
     }
 }
